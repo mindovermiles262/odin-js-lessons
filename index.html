@@ -4,21 +4,32 @@
 	</head>
 	<body>
 		<h1>Odin Library</h1>
-		<table id='table-books'>
-			<tr>
+		
+		<table>
+			<thead>
 				<th>Title</th>
 				<th>Author</th>
 				<th>Pages</th>
 				<th>Read?</th>
-			</tr>
-			<tr>
-				<td>The Hobbit</td>
-				<td>J.R.R. Tolkien</td>
-				<td>371</td>
-				<td>Yes</td>
-			</tr>
+			</thead>
+			<tbody id='table-books'>
+			</tbody>
 		</table>
-		<button id='new-book'>New Book</button>
+
+		<br />
+		<hr>
+		<br />
+
+		<h1>Add Book to Library</h1>
+
+		<form action="" id="form-new-book">
+			<p>Title: <input type="text" name="new-title" id="new-title"></p>
+			<p>Author: <input type="text" name="new-author" id="new-author"></p>
+			<p>Pages: <input type="number" name="new-pages" id="new-pages"></p>
+			<p>Read? <input type="checkbox" name="new-read" id="new-read"></p>
+			<input type="button" id="submit" value="Add Book">
+		</form>
+
 		<script src='./library.js'></script>
 	</body>
 </html>
